@@ -1,6 +1,7 @@
-# My Libray
+# My Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project is an online library to register books that have already been read, adding their title, author and number of pages. [The Odin Project](https://www.theodinproject.com/).
 
 ## Available Scripts
 

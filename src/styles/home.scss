@@ -1,0 +1,15 @@
+section.library-container{
+    background: #E9D8FD;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 800px;
+    border-radius: 20px;
+    
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 60px;
+    }
+}
