@@ -5,11 +5,119 @@ section.library-container{
     width: 1440px;
     height: 800px;
     border-radius: 20px;
+    padding: 20px;
+    position: relative;
+
+    >img{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 520px;    
+        opacity: 0.2; 
+    }
     
     header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 60px;
+
+        h1{
+            font-size: 32px;
+            color:#44337A;
+        }
+
+        button{
+            width: 128px;
+            height: 48px;
+            background-color: #B794F4;
+            color: #fff;
+            border: #fff 1px solid;
+            border-radius: 20px;
+            transition: 1s;
+            
+            &:hover{
+                background-color: #805AD5;
+            }
+        }
+    }
+
+    main{
+        padding: 48px;
+
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            margin-top: 16px;
+
+            >div{
+                display: flex;
+                flex-direction: column;
+
+                >input{
+                    width: 100%;
+                    height: 36px;
+                    border-radius: 8px;
+                    padding: 4px;
+                    border: 1px solid #fff;
+
+                    &+input{
+                        margin-top: 8px;
+                    }
+
+                    &::placeholder{
+                        color: #A0AEC0;
+                    }
+                }
+            }
+
+            >button{
+                width: 100%;
+                height: 36px;
+                border-radius: 8px;
+                padding: 4px;
+                border: 1px solid #fff;
+                background-color: #B794F4;
+                color: #fff;
+                margin-top: 8px;
+                transition: 1s;
+                text-transform: uppercase;
+
+                &:hover{
+                    background-color: #805AD5;
+                }
+            }
+        }
+
+        
+        h2{
+            font-size: 24px;
+            font-weight: bold;
+            color: #805AD5;
+        }
+
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            align-items: left;     
+            
+            h1{
+                font-size:24px;
+                color:#44337A;
+            }
+        }
+
+        .books-container{
+            overflow-x: auto;
+            display: flex;
+            margin-top: 16px;
+
+            body::-webkit-scrollbar {
+                width: 0px;
+            }
+        }
+
+
     }
 }
